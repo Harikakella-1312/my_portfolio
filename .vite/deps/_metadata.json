@@ -1,0 +1,23 @@
+{
+  "hash": "046e16d9",
+  "browserHash": "1a4ab908",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "77ed93b9",
+      "needsInterop": true
+    },
+    "react-type-animation": {
+      "src": "../../node_modules/react-type-animation/dist/esm/index.es.js",
+      "file": "react-type-animation.js",
+      "fileHash": "8a45e6fd",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-JKNLOS4O": {
+      "file": "chunk-JKNLOS4O.js"
+    }
+  }
+}
