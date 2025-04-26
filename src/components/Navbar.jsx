@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
+
 
 // Navigation bar
 function Navbar({ toggleTheme, isDark }) {
@@ -7,10 +9,30 @@ function Navbar({ toggleTheme, isDark }) {
   return (
     <nav className="navbar">
       <div className="navbar-links">
-        <a href="#home">Home</a>
+        {/* <a href="#home">Home</a> */}
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+        {/* <TypeAnimation className='type-animation'
+              sequence={[
+
+                '🚀 Turning coffee into code & bugs into features — welcome to my digital playground',
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                '👋 Im Harika software engineer by day, debugger by night, and snack enthusiast 24/7',
+                1000,
+                '💻 Code, compile, deploy, repeat. I build things for the web (and occasionally break them first)',
+                1000,
+                '✨ Warning: High levels of caffeine and curiosity detected. Proceed with tech talk.',
+                1000
+              ]}
+              wrapper="span"
+              omitDeletionAnimation	= {true}
+              cursor={true}
+              speed={28}
+              style={{ fontSize: '20px',display: 'inline-block' }}
+              repeat={Infinity}
+          /> */}
       </div>
       <div className="navbar-controls">
         <button className="navbar-theme" onClick={toggleTheme}>
