@@ -101,7 +101,7 @@ function App() {
       link: 'https://www.gsu.edu/',
       dates: '2023 - Present',
       location: 'Atlanta, GA',
-      logo: 'src/assets/georgia-state-university-logo.png',
+      logo: '/assets/georgia-state-university-logo.png',
     },
     {
       title: 'Bachelor’s in Computer Science',
@@ -109,14 +109,14 @@ function App() {
       link: 'https://www.gitam.edu/',
       dates: '2018 - 2022',
       location: 'India',
-      logo: 'src/assets/gitam.png',
+      logo: '/assets/gitam.png',
     },
   ];
 
   const experiences = [
     {
       company: 'GSU',
-      logo: 'src/assets/gsu_logo.jpg',
+      logo: '/assets/gsu_logo.jpg',
       role: 'Graduate Research Assistant',
       dates: 'Aug 2023 - Present',
       location: 'Atlanta, GA',
@@ -131,7 +131,7 @@ function App() {
     },
     {
       company: 'Accenture',
-      logo: 'src/assets/accenture logo.png',
+      logo: '/assets/accenture logo.png',
       role: 'Data Engineering Associate',
       dates: 'Jun 2022 - July 2023',
       location: 'India',
@@ -146,7 +146,7 @@ function App() {
     },
     {
       company: 'Smartknower',
-      logo: 'src/assets/smartknower-logo.jpg',
+      logo: '/assets/smartknower-logo.jpg',
       role: 'Programming Intern',
       dates: 'Jun 2022 - Aug 2022',
       location: 'India',
