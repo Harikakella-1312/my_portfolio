@@ -63,37 +63,37 @@ function App() {
   };
 
   const skills = [
-    { name: 'Java', image: 'src/assets/skills/java-logo.png' },
-    { name: 'Spring Boot', image: 'src/assets/skills/spring-boot.png' },
-    { name: 'Python', image: 'src/assets/skills/python-logo.jpg' },
-    { name: 'MySQL', image: 'src/assets/skills/mysql.png' },
-    { name: 'React', image: 'src/assets/skills/react-logo.png' },
-    { name: 'Docker', image: 'src/assets/skills/docker.png' },
-    { name: 'Jenkins', image: 'src/assets/skills/jenkins-logo.jpg' },
-    { name: 'AWS', image: 'src/assets/skills/AWS-logo.png' },
-    { name: 'CSS', image: 'src/assets/skills/css.png' },
-    { name: 'Angular', image: 'src/assets/skills/Angular.jpg' },
-    { name: 'Django', image: 'src/assets/skills/dijango.png' },
-    { name: 'DynamoDB', image: 'src/assets/skills/dynamo db.png' },
-    { name: 'GCP', image: 'src/assets/skills/GCP.png' },
-    { name: 'git', image: 'src/assets/skills/git.png' },
-    { name: 'Grafana', image: 'src/assets/skills/Grafana.png' },
-    { name: 'HTML', image: 'src/assets/skills/html.png' },
-    { name: 'Jira', image: 'src/assets/skills/jira.png' },
-    { name: 'Javascript', image: 'src/assets/skills/js logo.png' },
-    { name: 'Linux', image: 'src/assets/skills/linux.png' },
-    { name: 'Nodejs', image: 'src/assets/skills/nodejs.png' },
-    { name: 'PHP', image: 'src/assets/skills/PHP.png' },
-    { name: 'Postman', image: 'src/assets/skills/post man.png' },
-    { name: 'TypeScript', image: 'src/assets/skills/TypeScript-logo.png' },
-    { name: 'Splunk', image: 'src/assets/skills/slunk.png' },
-    { name: 'Keras', image: 'src/assets/skills/keras.png' },
-    { name: 'Maven', image: 'src/assets/skills/maven.png' },
-    { name: 'MongoDB', image: 'src/assets/skills/mongo.png' },
-    { name: 'Postgresql', image: 'src/assets/skills/postgre.png' },
-    { name: 'Tensorflow', image: 'src/assets/skills/tensorflow.png' },
+    { name: 'Java', image: '/assets/skills/java-logo.png' },
+    { name: 'Spring Boot', image: '/assets/skills/spring-boot.png' },
+    { name: 'Python', image: '/assets/skills/python-logo.jpg' },
+    { name: 'MySQL', image: '/assets/skills/mysql.png' },
+    { name: 'React', image: '/assets/skills/react-logo.png' },
+    { name: 'Docker', image: '/assets/skills/docker.png' },
+    { name: 'Jenkins', image: '/assets/skills/jenkins-logo.jpg' },
+    { name: 'AWS', image: '/assets/skills/AWS-logo.png' },
+    { name: 'CSS', image: '/assets/skills/css.png' },
+    { name: 'Angular', image: '/assets/skills/Angular.jpg' },
+    { name: 'Django', image: '/assets/skills/dijango.png' },
+    { name: 'DynamoDB', image: '/assets/skills/dynamo db.png' },
+    { name: 'GCP', image: '/assets/skills/GCP.png' },
+    { name: 'git', image: '/assets/skills/git.png' },
+    { name: 'Grafana', image: '/assets/skills/Grafana.png' },
+    { name: 'HTML', image: '/assets/skills/html.png' },
+    { name: 'Jira', image: '/assets/skills/jira.png' },
+    { name: 'Javascript', image: '/assets/skills/js logo.png' },
+    { name: 'Linux', image: '/assets/skills/linux.png' },
+    { name: 'Nodejs', image: '/assets/skills/nodejs.png' },
+    { name: 'PHP', image: '/assets/skills/PHP.png' },
+    { name: 'Postman', image: '/assets/skills/post man.png' },
+    { name: 'TypeScript', image: '/assets/skills/TypeScript-logo.png' },
+    { name: 'Splunk', image: '/assets/skills/slunk.png' },
+    { name: 'Keras', image: '/assets/skills/keras.png' },
+    { name: 'Maven', image: '/assets/skills/maven.png' },
+    { name: 'MongoDB', image: '/assets/skills/mongo.png' },
+    { name: 'Postgresql', image: '/assets/skills/postgre.png' },
+    { name: 'Tensorflow', image: '/assets/skills/tensorflow.png' },
   ];
-
+  
   const education = [
     {
       title: 'Master’s in Computer Science',
@@ -171,7 +171,7 @@ function App() {
           ref={videoRef}
           key={isDark ? 'dark' : 'light'}
         >
-          <source src={isDark ? "src/assets/dark.mp4" : "src/assets/light2.mp4"} type="video/mp4" />
+          <source src={isDark ? "/assets/dark.mp4" : "/assets/light2.mp4"} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* <div className="lottie-background">
@@ -255,7 +255,7 @@ function App() {
           <Lottie animationData={cartoonCoderfAnimation} loop={true} />
           </div>
           <div className="about-image">
-            <img src="src/assets/hariks_profile.jpg" alt="Profile" />
+            <img src="/assets/hariks_profile.jpg" alt="Profile" />
           </div>
         </div>
       </Section>
@@ -269,7 +269,7 @@ function App() {
             <Lottie animationData={cartoonCoderoAnimation} loop={true} />
           </div>
           <div className="education-image">
-            <img src="src/assets/college.jpg" alt="College Picture" height={400} width={900}/>
+            <img src="/assets/college.jpg" alt="College Picture" height={400} width={900}/>
           </div>
           <div className="education-details">
             {education.map((edu, index) => (
@@ -336,31 +336,31 @@ function App() {
               title="NAIP Wastewater Plant Detection"
               description="Applied deep learning-based semantic segmentation and CNN classification models to detect wastewater treatment plants from NAIP satellite imagery. Leveraged geospatial data preprocessing and model inference pipelines to automate environmental infrastructure identification."
               link="https://github.com/Harikakella-1312/Waste-water-plant-detection-system"
-              image="src/assets/water.jpg"
+              image="/assets/water.jpg"
             />
             <ProjectCard
               title="Hotel Booking Cancellation Prediction"
               description="Built predictive models using Random Forest and SVM, achieving 93% and 91% accuracy respectively, for booking cancellation forecasting. Engineered features from raw booking data and optimized model performance through hyperparameter tuning and cross-validation."
               link="https://github.com/Harikakella-1312"
-              image="src/assets/image23.png"
+              image="/assets/image23.png"
             />
             <ProjectCard
               title="Conference Management System"
               description="Designed a multi-module system using MySQL for managing conference workflows including registration, scheduling, and resource allocation. Implemented role-based access control (RBAC) and dynamic database queries to ensure secure and efficient user interactions."
               link="https://github.com/Harikakella-1312/Conference-Management-System"
-              image="src/assets/image.png"
+              image="/assets/image.png"
             />
             <ProjectCard
               title="Speech Emotion Recognition Mode"
               description="Developed an emotion classifier using Mel-Frequency Cepstral Coefficients (MFCCs) and Machine Learning algorithms to analyze speech signals. Integrated Speech Signal Processing techniques with supervised learning models for emotion detection accuracy."
               link="https://github.com/Harikakella-1312"
-              image="src/assets/speech_recognition.png"
+              image="/assets/speech_recognition.png"
             />
             <ProjectCard
               title="Organica Heaven Ecommerce Website"
               description="Built a full-stack e-commerce platform using HTML, CSS, JavaScript, PHP, and MySQL with local deployment via XAMPP. Implemented CRUD operations, session handling, and product search/filter functionality to enhance user experience."
               link="https://github.com/Harikakella-1312"
-              image="src/assets/organica.jpg"
+              image="/assets/organica.jpg"
             />
           </div>
           <button className="scroll-button right" onClick={() => scrollProjects('right')}>
@@ -386,7 +386,7 @@ function App() {
                 <CardMedia
                   component="img"
                   height="180"
-                  image="src/assets/certification/aws-certification.jpg"
+                  image="/assets/certification/aws-certification.jpg"
                   alt="AWS Certification Badge"
                 />
                 <CardContent>
@@ -426,7 +426,7 @@ function App() {
                 <CardMedia
                   component="img"
                   height="150"
-                  image="src/assets/certification/groceries.jpg"
+                  image="/assets/certification/groceries.jpg"
                   alt="Publication"
                 />
                 <CardContent>
